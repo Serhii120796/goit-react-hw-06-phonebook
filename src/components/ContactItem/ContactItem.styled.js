@@ -7,12 +7,14 @@ text-transform: capitalize;
 `;
 
 export const Button = styled.button`
+height: 20px;
+margin-left: auto;
 font-size: 12px;
 background-color: inherit;
-border: ${p => p.theme.borders.grey};
+border: ${p => p.theme.borders.gray};
 border-radius: ${p => p.theme.radius};
 
 &:hover, &:focus {
-    background-color: ${p => p.theme.colors.grey};
+    background-color: ${p => p.theme.colors.gray};
 }
 `;

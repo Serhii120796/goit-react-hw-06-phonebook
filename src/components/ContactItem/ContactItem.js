@@ -16,5 +16,3 @@ export const ContactItem = ({ contactItem: { id, name, number } }) => {
     </>
   );
 };
-
-// setContacts(contacts.filter(contact => id !== contact.id));

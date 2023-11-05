@@ -10,5 +10,7 @@ display: block;
 export const StyleInput = styled.input`
     display: block;
     margin-bottom: ${p => p.theme.spasing(5)};
-    border: ${p => p.theme.borders.grey};
+    width: 100%;
+    border: ${p => p.theme.borders.gray};
+    border-radius: ${p => p.theme.spasing(1)};
 `;

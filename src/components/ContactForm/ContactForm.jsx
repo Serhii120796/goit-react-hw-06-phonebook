@@ -1,6 +1,6 @@
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
-import { FormWraper, InputTitle, FieldWraper, StyleField, StyleErrorMessage} from './ContactForm.styled';
+import { FormWraper, Label, InputTitle, FieldWraper, StyleField, StyleErrorMessage} from './ContactForm.styled';
 import { Button } from '../ContactItem/ContactItem.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
@@ -38,21 +38,21 @@ export const ContactForm = () => {
     >
       <Form autoComplete="off">
         <FormWraper>
-          <label>
+          <Label>
             <InputTitle>Name</InputTitle>
             <FieldWraper>
-              <StyleField type="text" name="name" />
+              <StyleField type="text" name="name" placeholder="Enter a name"/>
               <StyleErrorMessage name="name" component="div" />
             </FieldWraper>
             
-          </label>
-          <label>
+          </Label>
+          <Label>
             <InputTitle>Number</InputTitle>
             <FieldWraper>
-              <StyleField type="tel" name="number" />
+              <StyleField type="tel" name="number" placeholder="Enter a phone number"/>
             <StyleErrorMessage name="number" component="div" />
             </FieldWraper>
-          </label>
+          </Label>
           <Button type="submit">Add contact</Button>
         </FormWraper>
       </Form>

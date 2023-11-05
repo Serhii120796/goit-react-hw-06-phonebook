@@ -10,6 +10,7 @@ export const Filter = () => {
         <StyleInput
         type="text"
         name="filter"
+        placeholder="Search"
         onChange={evt => dispatch(findContact(evt.target.value))}
       />      
     </label>

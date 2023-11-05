@@ -13,12 +13,14 @@ const theme = {
   },
   colors: {
     black: '#000000',
-    grey: '#b3b3b3',
+    white: '#ffffff',
+    lightGray: 'rgb(240, 240, 240)',
+    gray: '#b3b3b3',
     error: 'red',
   },
   borders: {
     black: '1px solid #000000',
-    grey: '1px solid #b3b3b3',
+    gray: '1px solid #b3b3b3',
   },
   radius: '5px',
   spasing: value => `${value * 4}px`,
